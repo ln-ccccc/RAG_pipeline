@@ -29,13 +29,7 @@
 
 ### 1）准备 Python 环境
 
-建议 Python 3.10+，并使用虚拟环境：
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -U pip
-```
+建议 Python 3.10+，并使用虚拟环境
 
 安装依赖（按脚本 import 列表给出）：
 
