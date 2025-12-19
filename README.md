@@ -47,6 +47,11 @@ pip install pymupdf pillow numpy faiss-cpu scikit-learn dashscope python-dotenv
 DASHSCOPE_API_KEY=你的DashScopeKey
 ```
 
+或者直接在终端
+```bash
+export DASHSCOPE_API_KEY=你的DashScopeKey
+```
+
 脚本会在启动时读取该变量；缺失会直接退出。
 
 ### 3）准备知识库 PDF
