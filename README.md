@@ -95,3 +95,11 @@ python3 RAG_api_Qwen_VL.py
 - 想强制重建索引：
   - 删除 `faiss_index_qwen_api_rag/` 目录后重新运行脚本即可
 
+## 运行结果
+<img width="2072" height="486" alt="image" src="https://github.com/user-attachments/assets/1090589f-2012-47eb-aca7-b88ffe39ea8b" />
+
+Building new FAISS index...
+Built FAISS with 280 vectors.
+表示构建 FAISS 向量索引，自动加载本地知识库（如科研论文、实验报告等），将其文本/图像特征编码为向量，并建立包含 280 个向量的 FAISS 索引，用于高效相似性检索。
+
+后续就都是流式对话系统，先改写user给出的query，输入后通过top-k选取分数最高的回答。
