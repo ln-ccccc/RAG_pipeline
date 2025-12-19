@@ -25,7 +25,7 @@
   - `index_to_doc.pkl`：向量 id → 元数据（文本/图片说明/source）
   - `embeddings.pkl`：归一化后的向量矩阵（用于重排）
 
-## 快速开始（本地跑起来）
+## 快速开始（本地）
 
 ### 1）准备 Python 环境
 
@@ -85,7 +85,7 @@ python3 RAG_api_Qwen_VL.py
 - `QWEN_VL_MODEL`：多模态生成模型（默认 `qwen-vl-plus`）
 - `CHAT_MODEL`：Query 改写用的生成模型（默认 `qwen-turbo`）
 
-## 关键实现点（面试可讲）
+## 关键实现点
 
 - 多模态信息进入检索空间：把图片转成 caption，再与文本一起做 embedding，避免“图表信息完全丢失”
 - 向量检索的工程化落地：向量归一化 + `IndexFlatIP`，用内积实现余弦相似度检索，成本低、可控
